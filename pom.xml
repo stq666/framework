@@ -124,7 +124,7 @@
     </prerequisites>
     <modules>
         <module>model</module>
-        <module>cornerstone</module>
+        <module>framework</module>
         <module>bizCommon</module>
         <module>dao</module>
         <module>service</module>

@@ -14,7 +14,7 @@
     <dependencies>
         <dependency>
             <groupId>com.drink</groupId>
-            <artifactId>cornerstone</artifactId>
+            <artifactId>framework</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
@@ -151,7 +151,7 @@
                 <configuration>
                     <forkMode>always</forkMode>
                     <!--<argLine>${surefire.argLine}</argLine>-->
-                    <runOrder>alphabetical</runOrder>
+                    <!--<runOrder>alphabetical</runOrder>-->
                     <includes>
                         <include>**/*Test.*</include>
                     </includes>

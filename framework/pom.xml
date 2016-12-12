@@ -11,10 +11,9 @@
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 
-	<artifactId>cornerstone</artifactId>
+	<artifactId>framework</artifactId>
 	<packaging>jar</packaging>
-	<name>cornerstone</name>
-	<description>drink cornerstone</description>
+	<name>framework</name>
 
 	<dependencies>
         <dependency>
@@ -219,7 +218,7 @@
 				<configuration>
 					<forkMode>always</forkMode>
 					<!--argLine>${surefire.argLine}</argLine-->
-					<runOrder>alphabetical</runOrder>
+					<!--<runOrder>alphabetical</runOrder>-->
 					<includes>
 						<include>**/*Test.*</include>
 					</includes>
