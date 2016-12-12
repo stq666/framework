@@ -9,7 +9,7 @@
 		<property name="hashIterations" value="1024" />
 	</bean>
 
-	<bean id="servicePasswordService" class="com.drink.cornerstone.security.PasswordService">
+	<bean id="servicePasswordService" class="com.drink.framework.security.PasswordService">
 		<property name="hashedCredentialsMatcher" ref="pwdSha512Matcher" />
 	</bean>
 </beans>

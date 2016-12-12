@@ -24,7 +24,7 @@
           class="org.mybatis.spring.SqlSessionTemplate">
         <constructor-arg index="0" ref="recsubSqlSessionFactory"/>
     </bean>
-    <bean id="recsubNameGenerator" class="com.drink.cornerstone.persistency.mybatis.ClassNameBeanNameGenerator"/>
+    <bean id="recsubNameGenerator" class="com.drink.framework.persistency.mybatis.ClassNameBeanNameGenerator"/>
 
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="basePackage" value="com.drink.dao"/>

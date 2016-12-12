@@ -1,16 +1,14 @@
 package com.drink.controller;
 
 import com.alibaba.fastjson.JSONObject;
-import com.drink.cornerstone.constant.BeanNames;
-import com.drink.cornerstone.constant.ConstantElement;
-import com.drink.cornerstone.constant.ControllerNames;
-import com.drink.cornerstone.service.ServiceException;
+import com.drink.framework.constant.BeanNames;
+import com.drink.framework.constant.ConstantElement;
+import com.drink.framework.constant.ControllerNames;
+import com.drink.framework.service.ServiceException;
 import com.drink.model.User;
 import com.drink.module.Message;
 import com.drink.module.Page;
-import com.drink.module.member.MemberVo;
 import com.drink.module.member.RewordVo;
-import com.drink.service.MemberService;
 import com.drink.service.RewardService;
 import org.apache.ibatis.logging.Log;
 import org.apache.ibatis.logging.LogFactory;

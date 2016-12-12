@@ -1,6 +1,6 @@
 package com.drink.service.impl;
 
-import com.drink.cornerstone.constant.ConstantElement;
+import com.drink.framework.constant.ConstantElement;
 import com.drink.dao.RewardMapper;
 import com.drink.module.Page;
 import com.drink.module.member.RewordVo;

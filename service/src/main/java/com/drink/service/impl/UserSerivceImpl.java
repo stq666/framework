@@ -1,8 +1,8 @@
 package com.drink.service.impl;
 
-import com.drink.cornerstone.constant.ConstantElement;
-import com.drink.cornerstone.service.ServiceException;
-import com.drink.cornerstone.util.MD5;
+import com.drink.framework.constant.ConstantElement;
+import com.drink.framework.service.ServiceException;
+import com.drink.framework.util.MD5;
 import com.drink.dao.MemberMapper;
 import com.drink.dao.UserMapper;
 import com.drink.model.User;

@@ -1,6 +1,6 @@
 package com.drink.interceptor;
 
-import com.drink.cornerstone.constant.ConstantElement;
+import com.drink.framework.constant.ConstantElement;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.subject.Subject;
 import org.springframework.web.servlet.HandlerInterceptor;

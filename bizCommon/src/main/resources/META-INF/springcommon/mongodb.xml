@@ -2,7 +2,7 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-<bean id="mongoConnection" init-method="init"  class="com.drink.cornerstone.mongodb.MongoConnection">
+<bean id="mongoConnection" init-method="init"  class="com.drink.framework.mongodb.MongoConnection">
     <property name="serverAddressList">
         <list value-type="com.mongodb.ServerAddress">
             <bean class="com.mongodb.ServerAddress">
@@ -28,8 +28,8 @@
         </list>
     </property>
     <property name="credentials">
-        <list value-type="com.drink.cornerstone.mongodb.Credential">
-         <bean class="com.drink.cornerstone.mongodb.Credential">
+        <list value-type="com.drink.framework.mongodb.Credential">
+         <bean class="com.drink.framework.mongodb.Credential">
              <property name="mechanism" value="MONGODB-CR"/>
              <property name="source" value="filedb"/>
              <property name="password" value="${mongodb.filedb.password}"/>
@@ -40,20 +40,20 @@
     <property name="requiredReplicaSetName" value="rs1"/>
     <property name="defaultReadPreference" value="secondaryPreferred"/>
 </bean>
-    <bean id="gridFsTemplate" init-method="init" class="com.drink.cornerstone.mongodb.GridFsTemplate">
+    <bean id="gridFsTemplate" init-method="init" class="com.drink.framework.mongodb.GridFsTemplate">
         <property name="mongoConnection" ref="mongoConnection"/>
         <property name="dbName" value="${mongodb.filedb.dbName}"/>
         <property name="bucket" value="photo"/>
     </bean>
-    <bean id="logTemplate" init-method="init" class="com.drink.cornerstone.mongodb.LogTemplate">
+    <bean id="logTemplate" init-method="init" class="com.drink.framework.mongodb.LogTemplate">
         <property name="mongoConnection" ref="mongoConnection"/>
         <property name="dbName" value="${mongodb.filedb.dbName}"/>
     </bean>
-    <bean id="statisticTemplate" init-method="init" class="com.drink.cornerstone.mongodb.StatisticTemplate">
+    <bean id="statisticTemplate" init-method="init" class="com.drink.framework.mongodb.StatisticTemplate">
         <property name="mongoConnection" ref="mongoConnection"/>
         <property name="dbName" value="${mongodb.filedb.dbName}"/>
     </bean>
-    <bean id="mongoFileStrategy"  class="com.drink.cornerstone.file.MongoFileStrategy">
+    <bean id="mongoFileStrategy"  class="com.drink.framework.file.MongoFileStrategy">
         <property name="gridFsTemplate" ref="gridFsTemplate"/>
     </bean>
 

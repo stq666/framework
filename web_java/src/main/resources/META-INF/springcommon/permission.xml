@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd">
 
 	<!-- ALL permission resources entry -->
-	<bean id="permission-resources" class="com.drink.cornerstone.security.PermissionResources">
+	<bean id="permission-resources" class="com.drink.framework.security.PermissionResources">
 		<property name="resources">
 			<map>
 				<entry key="department">

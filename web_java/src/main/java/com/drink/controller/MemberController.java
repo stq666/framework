@@ -1,13 +1,10 @@
 package com.drink.controller;
 
 import com.alibaba.fastjson.JSONObject;
-import com.drink.cornerstone.constant.BeanNames;
-import com.drink.cornerstone.constant.ConstantElement;
-import com.drink.cornerstone.constant.ControllerNames;
-import com.drink.cornerstone.service.ServiceException;
-import com.drink.dao.RewardMapper;
-import com.drink.model.Member;
-import com.drink.model.Reward;
+import com.drink.framework.constant.BeanNames;
+import com.drink.framework.constant.ConstantElement;
+import com.drink.framework.constant.ControllerNames;
+import com.drink.framework.service.ServiceException;
 import com.drink.model.User;
 import com.drink.module.Message;
 import com.drink.module.Page;
@@ -18,17 +15,12 @@ import com.drink.service.MemberService;
 import org.apache.ibatis.logging.Log;
 import org.apache.ibatis.logging.LogFactory;
 import org.apache.shiro.SecurityUtils;
-import org.apache.shiro.session.Session;
 import org.apache.shiro.subject.Subject;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 /**
  * 会员管理控制层
