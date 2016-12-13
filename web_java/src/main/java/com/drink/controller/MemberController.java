@@ -76,6 +76,11 @@ public class MemberController {
 
 
 
+            
+
+
+
+
             page=memberService.findPageReward(page);
             return msg.getResult(true,false,page,null,null);
         }catch (ServiceException e) {
